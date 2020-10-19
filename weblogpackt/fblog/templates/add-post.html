@@ -1,0 +1,14 @@
+<h1>this is add-post page</h1>
+
+
+<a href="{% url 'index' %}"> Back Home</a>
+<br /><br />
+
+
+<form method="POST" action="{% url 'add-post' %}">
+    {% csrf_token %}
+    {{ form.context }}
+    <button class="button" >Submit</button>
+</form>
+
+
