@@ -3,11 +3,14 @@
 <br />
 
 <h3>list posts :</h3>
-<ul>
+
 {% for post in posts %}
+<ul>
     <li>{{ post.context }}</li>
     <li>{{ post.release_datetime }}</li>
-{% endfor %}
+    <li>{{ post.short_link }}</li>
 </ul>
+{% endfor %}
+
 
 

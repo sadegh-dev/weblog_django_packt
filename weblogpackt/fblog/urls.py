@@ -1,4 +1,4 @@
-from django.urls import path,include
+from django.urls import path
 from . import views
 
 
@@ -7,3 +7,4 @@ urlpatterns = [
     path('add-post/', views.page_add_post, name='add-post'),
 ]
 
+ 
